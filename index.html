@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Pingpong</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="game-wrapper">
+    <div class="header-bar">
+      <h2>Pingpong</h2>
+      <div class="stats">
+        <span>Màn: <b id="txtLevel" style="color: #0984e3;">1</b>/2</span>
+        <span>Điểm: <b id="txtScore" style="color: #27ae60;">0</b></span>
+        <span>Mạng: <span id="txtLives" style="color: #e74c3c;"><i class="bi bi-heart-fill"></i> <i
+              class="bi bi-heart-fill"></i> <i class="bi bi-heart-fill"></i></span></span>
+      </div>
+    </div>
+
+    <div class="level-bar">
+      <span>Chọn màn: </span>
+      <button id="btnLvl1" class="btn-lvl active" onclick="loadLevel(1)">Màn 1</button>
+      <button id="btnLvl2" class="btn-lvl" onclick="loadLevel(2)">Màn 2</button>
+    </div>
+
+    <div class="canvas-container">
+      <canvas id="contentGame" width="1000" height="500"></canvas>
+    </div>
+
+  </div>
+
+  <script src="game.js"></script>
+</body>
+
+</html>
